@@ -1,0 +1,249 @@
+:root{ 
+
+--brand: #473C38;
+--text: #666666;
+
+/**--rouded: 10px;**/
+}
+
+
+/**resetar as configurações pre definidas**/
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block; /*para tirar a bordinha de baixo da imagem*/ 
+}
+
+.btn{
+    padding: 12px 50px; /*vertical(top/bottom) e horizontal(left/right)*/
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    background-color: white;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.menu a{
+    color: var(--brand);
+    margin-right: 66px;
+}
+
+.hero-section{
+    background-color: var(--brand);
+}
+
+.hero-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+}
+
+.img-hero{
+    filter:drop-shadow(20px 20px 50px 0px rgba(0, 0, 0, 0.25)); 
+}
+
+.catalogo h1{
+    font-size: 60px;
+    color: #fff;
+    line-height: 100%;
+}
+
+.catalogo p{
+    font-size: 16px;
+    color: #fff;
+    width:550px;
+}
+
+.catalogo .btn{
+    background-color: #C2B19C;
+    color: var(--brand);
+}
+
+.catalogo .btn:hover{
+    background-color: #635955;
+    color: #fff;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    column-gap: 129px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.apresentacao h2{
+    font-size: 48px;
+    color: var(--brand);
+    line-height: 100%;
+}
+
+.apresentacao p{
+    font-size: 16px;
+    color: var(--text);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.apresentacao .btn{
+    background-color: var(--brand);
+    color: #F0F1F0;
+    padding: 10px 50px !important;
+}
+
+.apresentacao .btn:hover{
+    background: var(--text);
+}
+
+.img-apresentacao{
+    filter:drop-shadow(20px 20px 50px 0px rgba(0, 0, 0, 0.25));
+}
+
+.flex-card{
+    display: flex;
+    flex-wrap: wrap; /*permite multiplas linhas dentro do flex container*/
+    gap: 24px;   
+    justify-content: center;
+}
+
+.card{
+    width: 364px;
+    height: 442px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+    display: flex; /*usar smp no elemento pai de onde vc quer mudar, qnd quiser trabalhar com flex == ele ajuda caso o texto tenha alteração e ajusta com o tamanho*/
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 50px;
+}
+
+.card p{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+
+.produtos h2{
+    color: var(--brand);
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.produtos h3{
+    font-size: 24px;
+    color: var(--brand);
+    font-family: "Playfair Display";
+}
+
+.produtos p{
+    font-size: 16px;
+    color: var(--text);
+    margin-top: 25px;
+    margin-bottom: 16px;
+    
+}
+
+.produtos .btn{
+    background-color: var(--brand);
+    color:#F0F1F0;
+    padding: 10px 50px !important;
+    text-align: center;
+}
+
+.depoimento{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.depoimento img{
+    display: block;
+    margin: auto;
+}
+
+.depoimento p{
+    font-size: 40px;
+    color: var(--brand);
+    font-family: "Playfair Display";
+}
+
+.rodape{ 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 121px; 
+}
+
+.footer{
+    background-color: var(--brand);
+    padding: 50px;
+}
+
+.footer h3{
+    color: #F0F1F0;
+}
+
+.footer p,ul{
+    color: #F0F1F0;
+}
+
+.produtos{
+    background-color: #F0F1F0;
+}
+
+.social a{
+    display:inline-block;
+    margin-left: 5px;
+    margin-top: 14px;
+}
+
+.contato ul{
+    list-style-type: none;
+}
+
+
+
+@media (max-width:1040px){
+
+}
